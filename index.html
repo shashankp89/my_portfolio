@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashank Pandey | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <nav>
+      <h1 class="logo">Shashank.dev</h1>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="fade-in">
+    <div class="hero-wrapper">
+      <div class="profile-picture">
+        <img src="photo.jpg" alt="Shashank Pandey">
+      </div>
+
+      <div class="hero-content">
+        <h2>Hi, I'm <span class="gradient-text">Shashank Pandey</span></h2>
+        <p class="tagline">
+          <span id="typing"></span><span class="cursor">|</span>
+        </p>
+        <a href="#projects" class="btn glow">Explore My Work</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I'm a web developer with a passion for clean UI, elegant logic, and impactful design.
+      My journey began with curiosity and evolved into a career where I craft digital experiences
+      that are not only visually appealing but also highly functional.
+    </p>
+    <p>
+      When I’m not coding, I’m probably reading tech blogs, sketching ideas, or learning something new in the world of
+      AI & cloud computing.
+    </p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid glass">
+      <div><i class="fab fa-html5"></i> HTML5</div>
+      <div><i class="fab fa-css3-alt"></i> CSS3</div>
+      <div><i class="fab fa-js-square"></i> JavaScript</div>
+      <div><i class="fab fa-react"></i> React.js</div>
+      <div><i class="fab fa-node-js"></i> Node.js</div>
+      <div><i class="fas fa-database"></i> MongoDB</div>
+      <div><i class="fas fa-fire"></i> Firebase</div>
+      <div><i class="fas fa-code"></i> Tailwind CSS</div>
+      <div><i class="fab fa-github"></i> Git & GitHub</div>
+      <div><i class="fab fa-figma"></i> Figma</div>
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card glass">
+        <h3>Rock paper scissor-1</h3>
+        <p>A social platform for developers to share projects, collaborate, and grow their network.</p>
+        <a href="https://shashankp89.github.io/rcp-1/" class="btn" target="_blank" rel="noopener noreferrer">Live
+          Demo</a>
+
+      </div>
+      <div class="project-card glass">
+        <h3>TaskTrackr</h3>
+        <p>Minimalistic productivity app for managing tasks, deadlines & habits with localStorage sync.</p>
+        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">View App</a>
+      </div>
+      <div class="project-card glass">
+        <h3>My Portfolio</h3>
+        <p>This very site — built with responsive design, animations, and modern aesthetics.</p>
+        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Explore Site</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2 class="section-title">Get In Touch</h2>
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
+      <div class="form-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+
+      <div class="form-group">
+        <i class="fas fa-comment-dots"></i>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit" class="btn glow">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+
+    <div id="successPopup" class="popup hidden">
+      <i class="fas fa-check-circle"></i>
+      <p>Thank you! Your message has been sent.</p>
+    </div>
+    <div class="social-icons">
+      <a href="https://instagram.com/shashan0949t" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/shashank-pandey-bb345a363" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/shashankp89" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+
+  </section>
+
+  <footer>
+    <p>© 2025 Shashank Pandey | Built with 💙 passion and ☕ caffeine</p>
+  </footer>
+
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#00f2fe" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00f2fe",
+          opacity: 0.2,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
