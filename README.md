@@ -25,7 +25,7 @@ I am a driven software and hardware engineer with a passion for clean UI, elegan
   - Selected for the internal round of the **Smart India Hackathon (SIH)**.
   - Winner of the cryptography competition, **"The Imitation Game"**.
 - 💡 **Interests:** Full-stack development, competitive programming, network security (deep packet inspection), and leveraging RISC-V architectures.
-- 📫 **How to reach me:** Drop a message on [LinkedIn](https://www.linkedin.com/in/shashank-pandey-bb345a363) or via my [Portfolio Contact Form](https://shashankp89.github.io).
+- 📫 **How to reach me:** Drop a message on [LinkedIn](https://www.linkedin.com/in/shashank-pandey-bb345a363) or via my [Portfolio Contact Form](https://shashankp89.github.io/my_portfolio/).
 
 ---
 
@@ -95,15 +95,7 @@ Problem-solving is at the core of my logic-building process. I maintain a strong
 
 ---
 
-### 📈 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shashankp89&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="Shashank's GitHub stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shashankp89&theme=tokyonight&hide_border=true&background=0f2027" alt="Shashank's GitHub streak" width="48%" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shashankp89&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="Top Languages" width="60%" />
-</p>
+ 
 
 ---
 <div align="center">
