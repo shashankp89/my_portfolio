@@ -1,6 +1,35 @@
-// Scroll animation on entry
-const faders = document.querySelectorAll(".fade-in");
+// Initialize Particles.js
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    color: { value: "#00f2fe" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#00f2fe",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 2 }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" }
+    },
+    modes: {
+      repulse: { distance: 100 },
+      push: { particles_nb: 4 }
+    }
+  },
+  retina_detect: true
+});
 
+// Scroll Animations
+const faders = document.querySelectorAll(".fade-in");
 const appearOnScroll = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -24,12 +53,13 @@ toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
 });
 
+// Typing Effect
 document.addEventListener("DOMContentLoaded", () => {
   const typingElement = document.getElementById("typing");
   const roles = [
     "Full Stack Developer",
     "Creative Technologist",
-    "Open Source Enthusiast"
+    "AI / Hardware Engineer"
   ];
   let roleIndex = 0;
   let charIndex = 0;
@@ -41,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       typingElement.textContent = currentRole.substring(0, charIndex++);
       if (charIndex > currentRole.length) {
         isDeleting = true;
-        setTimeout(type, 1500); // Pause before deleting
+        setTimeout(type, 1500); 
         return;
       }
     } else {
@@ -53,9 +83,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setTimeout(type, isDeleting ? 50 : 100);
   }
-
   type();
 });
+
+// Contact Form Submission
 const form = document.getElementById("contactForm");
 const popup = document.getElementById("successPopup");
 

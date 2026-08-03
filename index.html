@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shashank Pandey | Full Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
 </head>
 
 <body>
@@ -19,28 +16,26 @@
     <nav>
       <h1 class="logo">Shashank.dev</h1>
       <div class="menu-toggle" id="menu-toggle">
-        <i class="fas fa-bars"></i>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
       <ul id="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
     </nav>
-
   </header>
-
-
 
   <section id="hero" class="fade-in">
     <div class="hero-wrapper">
       <div class="profile-picture">
         <img src="photo.jpg" alt="Shashank Pandey">
       </div>
-
       <div class="hero-content">
         <h2>Hi, I'm <span class="gradient-text">Shashank Pandey</span></h2>
         <p class="tagline">
@@ -49,7 +44,6 @@
         <a href="#projects" class="btn glow">Explore My Work</a>
       </div>
     </div>
-
   </section>
 
   <section id="about" class="fade-in">
@@ -78,50 +72,133 @@
       <div><i class="fas fa-code"></i> Tailwind CSS</div>
       <div><i class="fab fa-github"></i> Git & GitHub</div>
       <div><i class="fab fa-figma"></i> Figma</div>
+      <div><i class="fab fa-python"></i> Python</div>
+      <div><i class="fas fa-file-code"></i> C++</div>
+      <div><i class="fas fa-eye"></i> OpenCV</div>
+      <div><i class="fas fa-project-diagram"></i> MediaPipe</div>
+      <div><i class="fab fa-java"></i> Java</div>
+      <div><i class="fas fa-layer-group"></i> DSA</div>
+      <div><i class="fab fa-linux"></i> Linux</div>
+    </div>
+  </section>
+
+  <section id="experience" class="fade-in">
+    <h2 class="section-title">Experience</h2>
+    <div class="glass experience-card">
+      <div class="experience-header">
+        <div>
+          <h3>Engineering Intern - AI Accelerator for TinyML</h3>
+          <h4>AICTE IdeaLab - GGSIPU</h4>
+        </div>
+        <span class="duration">June 2026 – August 2026</span>
+      </div>
+      <p>
+        Worked as a Software and AI Engineering Intern focusing on leveraging RISC-V architecture on Field Programmable Gate Arrays (FPGAs) to optimize AI applications for TinyML constraints. Designed and built a custom hardware AI accelerator pipeline to improve edge computing efficiency.
+      </p>
+      <br>
+      <p>
+        Optimized deep learning models using Python, TensorFlow, and Keras for hardware deployment. Collaborated closely with peers on code reviews and successfully debugged complex system-level bottlenecks to ensure smooth real-time execution.
+      </p>
+      <a href="https://github.com/shashankp89/Ai_accelerator-using-FPGA" class="btn" style="margin-top: 1.5rem;" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> View Report
+      </a>
     </div>
   </section>
 
   <section id="projects" class="fade-in">
     <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
+      
+      <!-- 1. RCP-1 -->
       <div class="project-card glass">
-        <h3>Rock paper scissor-1</h3>
-        <p>An interactive variation of the classic game with a modern twist.</p>
-        <a href="https://shashankp89.github.io/rcp-1/" class="btn" target="_blank" rel="noopener noreferrer">Live
-          Demo</a>
-
+        <div>
+          <h3>Rock Paper Scissor-1</h3>
+          <p>An interactive variation of the classic game with a modern twist.</p>
+        </div>
+        <a href="https://shashankp89.github.io/rcp-1/" class="btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
+
+      <!-- 2. Foodify -->
       <div class="project-card glass">
-        <h3>TaskOfJUnkies</h3>
-        <p>Minimalistic productivity app for managing tasks, deadlines & habits with localStorage sync.</p>
+        <div>
+          <h3>Foodify</h3>
+          <p>A comprehensive application designed for food discovery and dynamic user interaction.</p>
+        </div>
+        <a href="https://github.com/shashankp89/Foodify" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <!-- 3. AI Interview Preparation -->
+      <div class="project-card glass">
+        <div>
+          <h3>AI Interview Preparation</h3>
+          <p>An intelligent platform providing tailored mock environments to help candidates prepare for technical interviews.</p>
+        </div>
+        <a href="https://github.com/shashankp89/Ai-based-interview-preparation-platform" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <!-- 4. Bell Palsy's Rehab System -->
+      <div class="project-card glass">
+        <div>
+          <h3>Bell Palsy's Rehab System</h3>
+          <p>A Facial Rehabilitation Assistant designed to track muscle-specific performance metrics through real-time visual overlays using MediaPipe and OpenCV.</p>
+        </div>
+        <a href="https://github.com/shashankp89/Bell-s-Palsy-Rehabilitation-Assistant" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <!-- 5. PacketPay -->
+      <div class="project-card glass">
+        <div>
+          <h3>PacketPay</h3>
+          <p>A secure and efficient payment gateway logic simulation to handle transactional networking safely.</p>
+        </div>
+        <a href="https://github.com/shashankp89/PacketPay" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <!-- 6. Deep Packet Inspection -->
+      <div class="project-card glass">
+        <div>
+          <h3>Deep Packet Inspection</h3>
+          <p>A low-level system design project built in C++ featuring a Packet Analyzer to monitor and secure network traffic.</p>
+        </div>
+        <a href="https://github.com/shashankp89/Data-Packet-Inspection" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <!-- 7. TaskOfJunkies -->
+      <div class="project-card glass">
+        <div>
+          <h3>TaskOfJunkies</h3>
+          <p>Minimalistic productivity app for managing tasks, deadlines & habits with localStorage sync.</p>
+        </div>
         <a href="https://shashankp89.github.io/TaskOfJunkies/" class="btn" target="_blank" rel="noopener noreferrer">View App</a>
       </div>
+
+      <!-- 8. Portfolio -->
       <div class="project-card glass">
-        <h3>My Portfolio</h3>
-        <p>This very site — built with responsive design, animations, and modern aesthetics.</p>
+        <div>
+          <h3>My Portfolio</h3>
+          <p>This very site — built with responsive design, animations, and modern aesthetics.</p>
+        </div>
         <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Explore Site</a>
       </div>
+      
     </div>
   </section>
 
   <section id="contact" class="fade-in">
     <h2 class="section-title">Get In Touch</h2>
-    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
+    <form class="contact-form" action="https://formspree.io/f/xrennopv" method="POST" id="contactForm">
       <div class="form-group">
         <i class="fas fa-user"></i>
         <input type="text" name="name" placeholder="Your Name" required />
       </div>
-
       <div class="form-group">
         <i class="fas fa-envelope"></i>
         <input type="email" name="email" placeholder="Your Email" required />
       </div>
-
       <div class="form-group">
         <i class="fas fa-comment-dots"></i>
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       </div>
-
       <button type="submit" class="btn glow">
         <i class="fas fa-paper-plane"></i> Send Message
       </button>
@@ -131,6 +208,7 @@
       <i class="fas fa-check-circle"></i>
       <p>Thank you! Your message has been sent.</p>
     </div>
+    
     <div class="social-icons">
       <a href="https://instagram.com/shashankp089" target="_blank" title="Instagram">
         <i class="fab fa-instagram"></i>
@@ -142,47 +220,12 @@
         <i class="fab fa-github"></i>
       </a>
     </div>
-
-
   </section>
 
   <footer>
-    <p>© 2025 Shashank Pandey | Built with 💙 passion and ☕ caffeine</p>
+    <p>© 2026 Shashank Pandey | Built with 💙 passion and ☕ caffeine</p>
   </footer>
 
-
-  <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 80 },
-        color: { value: "#00f2fe" },
-        shape: { type: "circle" },
-        opacity: { value: 0.3 },
-        size: { value: 3 },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#00f2fe",
-          opacity: 0.2,
-          width: 1
-        },
-        move: { enable: true, speed: 2 }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" }
-        },
-        modes: {
-          repulse: { distance: 100 },
-          push: { particles_nb: 4 }
-        }
-      },
-      retina_detect: true
-    });
-  </script>
-   
   <script src="script.js"></script>
 </body>
-
 </html>
